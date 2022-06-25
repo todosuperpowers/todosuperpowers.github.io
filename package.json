@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next export && echo 'www.todosuperpowers.com' > out/CNAME",
     "start": "next start",
     "lint": "next lint",
     "deploy": "npm run build && touch out/.nojekyll && git add -f out/ && git commit -m \"chore: deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
