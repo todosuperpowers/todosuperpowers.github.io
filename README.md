@@ -6,12 +6,24 @@ This is the todosuperpowers website.
 
 The stack for this site consists of:
 
-* NextJS (using node v16.x & npm v8.x)
+* NextJS 13 (using node v20.x)
 * TailwindCSS
 
-To get setup for development:
+### To Get Setup for Development
 
-* git clone <this repo>
+Checkout the Code:
+
+* Create an ssh key and register it in the github profile settings at https://github.com/todosuperpowers/todosuperpowers.github.io
+* git -c core.sshCommand="ssh -i ~/.ssh/todosuperpowers_id_rsa" clone git@github.com:todosuperpowers/todosuperpowers.github.io.git
+
+Override your personal git settings for this repo:
+
+* git config --local core.sshCommand "ssh -i ~/.ssh/todosuperpowers_id_rsa"
+* git config --local user.name "Todo Superpowers"
+git config --local user.email "dev@todosuperpowers.com"
+
+Install deps and run the app:
+
 * npm i
 * npm run dev
 
