@@ -20,7 +20,7 @@ Override your personal git settings for this repo:
 
 * git config --local core.sshCommand "ssh -i ~/.ssh/todosuperpowers_id_rsa"
 * git config --local user.name "Todo Superpowers"
-git config --local user.email "dev@todosuperpowers.com"
+* git config --local user.email "dev@todosuperpowers.com"
 
 Install deps and run the app:
 
